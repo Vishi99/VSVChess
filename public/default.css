@@ -1,0 +1,385 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+
+body {
+	background-image: url('../img/chess_bg.jpg');
+	background-size: cover;
+	z-index: 0;
+	overflow-y: auto;
+	display: flex;
+	flex-flow: column;
+	align-content: center;
+	align-items: center;
+}
+
+/************** LOGIN **************/
+
+.page-login {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
+	margin-top: 250px; 
+	width: 500px;
+	height: 300px;
+	border-radius: 5rem;
+	background-color: rgba(9, 9, 9, 0.591);
+	padding-top: 50px;
+}
+
+#login {
+	width: 260px;
+    height: 35px;
+	background: #fff;
+	border: 1px solid #fff;
+	cursor: pointer;
+	border-radius: 1rem;
+	color: #6c85a1;
+	font-family: 'Roboto Mono', monospace;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 6px;
+	margin-top: 14px;
+}
+
+#username {
+	width: 250px;
+    height: 30px;
+    margin-top: 10px;
+	background: transparent;
+	border: 1px solid rgba(255,255,255,0.6);
+	border-radius: 2px;
+	color: #fff;
+	font-family: 'Roboto Mono', monospace;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+}
+
+#VSV {
+	color: #fff;
+	font-family: 'Roboto Mono', monospace;
+	font-size: 65px;
+	font-weight: 200;
+}
+
+#Chess {
+	color: #5379fa !important;
+}
+
+/************** LOBBY **************/
+
+#page-lobby {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
+	text-align: center;
+	margin-top: 200px; 
+	width: fit-content;
+	height: fit-content;
+	border-radius: 5rem;
+	background-color: rgba(9, 9, 9, 0.851);
+	padding: 20px 100px 40px 100px;
+}
+
+#VSV2 {
+	color: #fff;
+	font-family: 'Roboto Mono', monospace;
+	font-size: 65px;
+	font-weight: 200;
+	margin-bottom: 10px;
+}
+
+#Chess2 {
+	color: #5379fa !important;
+}
+
+.page-lobby h2 {
+	font-family: 'Roboto Mono', monospace;
+	color: rgb(242, 8, 8);
+}
+
+.page-lobby h3 {
+	font-family: 'Roboto Mono', monospace;
+	color: rgb(8, 247, 8);
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+#gamesList button{
+	width: 100;
+    height: 35px;
+	background: #fff;
+	border: 1px solid #fff;
+	cursor: pointer;
+	border-radius: 0.5rem;
+	color: #000000;
+	font-family: 'Roboto Mono', monospace;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 6px;
+	margin-top: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+#userList button{
+	width: 100;
+    height: 35px;
+	background: #fff;
+	border: 1px solid #fff;
+	cursor: pointer;
+	border-radius: 0.5rem;
+	color: #000000;
+	font-family: 'Roboto Mono', monospace;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 6px;
+	margin-top: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+/************** Board **************/
+
+#page-game {
+	align-content: center;
+	flex-direction: row;
+	text-align: center;
+	width: 100%;
+	height: fit-content;
+}
+
+#decorations {
+	align-items: center;
+	text-align: center;
+	align-content: center;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: fit-content;
+	padding: 20px 20px 20px 20px;
+	background-color: rgba(9, 9, 9, 0.851);
+}
+
+#VSV3 {
+	color: #fff;
+	font-family: 'Roboto Mono', monospace;
+	font-size: 65px;
+	font-weight: 200;
+}
+
+#Chess3 {
+	color: #5379fa !important;
+}
+
+/****************** Board ****************/
+
+#container {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 100%;
+	margin: auto;
+}
+
+#board {
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	margin-top: 20px; 
+	width: fit-content;
+	height: fit-content;
+	border-radius: 5rem;
+	background-color: rgba(9, 9, 9, 0.851);
+	padding: 20px 100px 20px 100px;
+}
+
+#game-board{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#player1{
+	background-color: rgba(9, 9, 9, 0.954);
+	display: flex;
+	flex-direction: row;
+	width: 450px;
+	height: 50px;
+	color: white;
+	font-family: 'Roboto Mono', monospace;
+	font-size: 25px;
+}
+
+#player2{
+	background-color: rgba(9, 9, 9, 0.954);
+	display: flex;
+	flex-direction: row;
+	width: 450px;
+	height: 50px;
+	color: white;
+	font-family: 'Roboto Mono', monospace;
+	font-size: 25px;
+}
+
+#name1 {
+	width: 50%;
+	margin-top: 6px;
+	margin-left: 10px;
+	text-align: left;
+}
+#timer1 {
+	width: 50%;
+	margin-top: 6px;
+	margin-right: 10px;
+	text-align: right;
+}
+#name2 {
+	width: 50%;
+	margin-top: 6px;
+	margin-left: 10px;
+	text-align: left;
+}
+#timer2 {
+	width: 50%;
+	margin-top: 6px;
+	margin-right: 10px;
+	text-align: right;
+}
+
+/************** Chat Section **************/
+
+#buttons{
+	width: inherit;
+	direction: flex;
+	flex-direction: row;
+}
+
+#game-back {
+	width: 100px;
+    height: 35px;
+	background: #fff;
+	border: 1px solid #fff;
+	cursor: pointer;
+	border-radius: 0.5rem;
+	color: #000000;
+	font-family: 'Roboto Mono', monospace;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 6px;
+	margin-top: 10px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+#game-resign {
+	width: 100px;
+    height: 35px;
+	background: #fff;
+	border: 1px solid #fff;
+	cursor: pointer;
+	border-radius: 0.5rem;
+	color: #000000;
+	font-family: 'Roboto Mono', monospace;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 6px;
+	margin-top: 10px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+#chat {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	margin: auto;
+	margin-top: 20px; 
+	width: 300px;
+	height: 555px;
+	border-radius: 5rem;
+	background-color: rgba(9, 9, 9, 0.851);
+	padding: 20px 100px 20px 100px;
+}
+
+#chatsection {
+	font-family: 'Roboto Mono', monospace;
+	font-size: 35px;
+	color: white;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#chatty{
+	align-items: flex-start;
+	align-content: flex-start;
+	text-align: left;
+	color: white;
+	overflow-x: auto;
+	overflow-y: auto;
+	font-family: 'Roboto Mono', monospace;
+	font-size: 15px;
+	margin-top: 10px;
+	height: 400px;
+}
+
+#typing {
+	height: fit-content;
+	width: fit-content;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	margin: auto;
+	margin-bottom: 30px;
+}
+
+#message{
+	width: 250px;
+    height: 30px;
+	background: transparent;
+	border: 1px solid rgba(255,255,255,0.6);
+	border-radius: 2px;
+	color: #fff;
+	font-family: 'Roboto Mono', monospace;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+}
+
+#sendmsg{
+	width: 250px;
+    height: 35px;
+	background: #fff;
+	border: 1px solid #fff;
+	cursor: pointer;
+	border-radius: 0.5rem;
+	color: #000000;
+	font-family: 'Roboto Mono', monospace;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 6px;
+}
+
+/************** Miscellaneous **************/
+
+#page-lobby {
+	display: none;
+}
+
+#page-game {
+	display: none;
+}
+
+.circle {
+	background-color: green;
+	width: 30px;
+	height: 30px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+
+.circle.offline {
+	background-color: yellow;
+}
